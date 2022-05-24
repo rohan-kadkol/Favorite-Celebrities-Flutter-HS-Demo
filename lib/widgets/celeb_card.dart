@@ -20,12 +20,6 @@ class _CelebCardState extends State<CelebCard> {
   SMIInput<bool>? _state;
 
   void _onRiveInit(Artboard artboard) {
-    final controller =
-        StateMachineController.fromArtboard(artboard, 'State Machine 1');
-    artboard.addController(controller!);
-    // _state = controller.findInput<bool>("Crossing") as SMIInput<bool>?;
-    _state = controller.findInput(widget.celebAnim.anim);
-    print(_state);
   }
 
   @override
@@ -33,28 +27,6 @@ class _CelebCardState extends State<CelebCard> {
     _state?.change(widget.celebAnim.animState);
 
     return Container(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          const SizedBox(height: 20.0),
-          Text(
-            widget.celebAnim.name,
-            style: Theme.of(context)
-                .textTheme
-                .headline4
-                ?.copyWith(color: Colors.white),
-          ),
-          Expanded(
-            child: RiveAnimation.asset(
-              widget.celebAnim.animPath,
-              onInit: _onRiveInit,
-            ),
-          ),
-          BottomBar(
-            celebAnim: widget.celebAnim,
-          )
-        ],
-      ),
     );
   }
 }

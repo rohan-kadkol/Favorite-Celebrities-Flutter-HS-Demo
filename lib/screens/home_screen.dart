@@ -10,23 +10,13 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // TODO: Change backgroundColor to black
       backgroundColor: Colors.black,
-      // appBar: AppBar(
-      //   backgroundColor: Colors.black,
-      //   shadowColor: Colors.grey,
-      // ),
+      // TODO: Add CelebsPageView and wrap it with a CelebProvider
       body: ChangeNotifierProvider(
         create: (_) => CelebProvider(),
         child: CelebsPageView(),
       ),
-      // body: Column(
-      //   children: [
-      //     Expanded(
-      //       child: CelebsPageView(),
-      //     ),
-      //     // BottomBar()
-      //   ],
-      // ),
     );
   }
 }

@@ -42,11 +42,6 @@ class _CelebsPageViewState extends State<CelebsPageView> {
     ];
 
     return Container(
-      child: PageView(
-        children: celebAnims
-            .map((celebAnim) => CelebCard(celebAnim: celebAnim))
-            .toList(),
-      ),
     );
   }
 }

@@ -12,21 +12,7 @@ class BottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 50.0,
-      width: double.infinity,
-      color: Colors.grey.shade900,
-      child: Center(
-        child: AnimStateSwitch(celebAnim: celebAnim),
-      ),
-      // child: Row(
-      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      //   // children: celebAnim.animStates
-      //   //     .map(
-      //   //       (animState) => AnimStateSwitch(animState: animState),
-      //   //     )
-      //   //     .toList(),
-      //   children: [AnimStateSwitch(celebAnim: celebAnim)],
-      // ),
+      
     );
   }
 }
