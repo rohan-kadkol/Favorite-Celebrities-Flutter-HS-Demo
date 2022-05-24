@@ -11,6 +11,11 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
+      // TODO (1): Add CelebsPageView and wrap it with a CelebProvider
+      body: ChangeNotifierProvider(
+        create: (_) => CelebProvider(),
+        child: CelebsPageView(),
+      ),
     );
   }
 }

@@ -19,14 +19,31 @@ class _CelebCardState extends State<CelebCard> {
 
   SMIInput<bool>? _state;
 
-  void _onRiveInit(Artboard artboard) {
-  }
+  void _onRiveInit(Artboard artboard) {}
 
   @override
   Widget build(BuildContext context) {
     _state?.change(widget.celebAnim.animState);
 
     return Container(
+      // TODO (3): Add a Column
+      // TODO (4): CrossAxisAlignment of center
+      // TODO (5): Top padding SizedBox of height = 20.0
+      // TODO (6): Add Text with widget.celebAnim.name
+      // TODO (7): Style the Text with headline4 and color of white
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          const SizedBox(height: 20.0),
+          Text(
+            widget.celebAnim.name,
+            style: Theme.of(context)
+                .textTheme
+                .headline4
+                ?.copyWith(color: Colors.white),
+          ),
+        ],
+      ),
     );
   }
 }
