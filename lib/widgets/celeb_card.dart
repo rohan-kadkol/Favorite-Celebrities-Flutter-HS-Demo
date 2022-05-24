@@ -26,11 +26,6 @@ class _CelebCardState extends State<CelebCard> {
     _state?.change(widget.celebAnim.animState);
 
     return Container(
-      // TODO (3): Add a Column
-      // TODO (4): CrossAxisAlignment of center
-      // TODO (5): Top padding SizedBox of height = 20.0
-      // TODO (6): Add Text with widget.celebAnim.name
-      // TODO (7): Style the Text with headline4 and color of white
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
