@@ -11,7 +11,6 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // TODO (2): Change backgroundColor to black
-      backgroundColor: Colors.black
     );
   }
 }
