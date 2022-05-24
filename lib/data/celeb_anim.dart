@@ -15,10 +15,3 @@ class CelebAnim {
     required this.animState,
   });
 }
-
-// class AnimState {
-//   final String state;
-//   final bool isActivated;
-
-//   const AnimState({required this.state, this.isActivated = false});
-// }

@@ -11,22 +11,10 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      // appBar: AppBar(
-      //   backgroundColor: Colors.black,
-      //   shadowColor: Colors.grey,
-      // ),
       body: ChangeNotifierProvider(
         create: (_) => CelebProvider(),
         child: CelebsPageView(),
       ),
-      // body: Column(
-      //   children: [
-      //     Expanded(
-      //       child: CelebsPageView(),
-      //     ),
-      //     // BottomBar()
-      //   ],
-      // ),
     );
   }
 }
