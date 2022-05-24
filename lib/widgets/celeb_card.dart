@@ -51,7 +51,6 @@ class _CelebCardState extends State<CelebCard> {
               onInit: _onRiveInit,
             ),
           ),
-          // TODO (1): Add a BottomBar with widget.celebAnim
           BottomBar(
             celebAnim: widget.celebAnim,
           )

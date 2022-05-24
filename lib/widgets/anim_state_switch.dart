@@ -9,12 +9,6 @@ class AnimStateSwitch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // TODO (5): Row with MainAxisAlignment = center
-      // TODO (6): Text of celebAnim.anim with color of white
-      // TODO (7): Spacing SizedBox of width of 10.0
-      // TODO (8): Switch with value celebAnim.animState
-      // TODO (9): onChange: celebAnim.onChange(context)
-      // TODO (10): inactiveTrackColor = grey
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
