@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // TODO (2): Change backgroundColor to black
-      // TODO (3): Add CelebsPageView and wrap it with a CelebProvider
+      backgroundColor: Colors.black
     );
   }
 }
