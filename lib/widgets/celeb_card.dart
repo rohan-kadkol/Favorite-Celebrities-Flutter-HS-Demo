@@ -52,9 +52,6 @@ class _CelebCardState extends State<CelebCard> {
             ),
           ),
           // TODO (1): Add a BottomBar with widget.celebAnim
-          BottomBar(
-            celebAnim: widget.celebAnim,
-          )
         ],
       ),
     );

@@ -15,21 +15,6 @@ class AnimStateSwitch extends StatelessWidget {
       // TODO (8): Switch with value celebAnim.animState
       // TODO (9): onChange: celebAnim.onChange(context)
       // TODO (10): inactiveTrackColor = grey
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            celebAnim.anim,
-            style: TextStyle(color: Colors.white),
-          ),
-          const SizedBox(width: 10.0),
-          Switch(
-            value: celebAnim.animState,
-            onChanged: (v) => celebAnim.onChange(context),
-            inactiveTrackColor: Colors.grey,
-          )
-        ],
-      ),
     );
   }
 }
