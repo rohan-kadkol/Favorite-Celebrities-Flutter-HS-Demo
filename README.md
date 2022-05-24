@@ -26,11 +26,11 @@ Basic Flutter App/Website to show HS students that coding is cool!
 
 ### Steps
 
-1. Basic Structure
-<img src="assets/step_1.png">
-2. Show names
-<img src="assets/step_2.gif">
-3. Basic Anim
-<img src="assets/step_3.gif">
-4. Anim Switches
-<img src="assets/final.gif">
+1. Basic Structure<br/>
+<img src="assets/step_1.png" width="300px">
+2. Show names<br/>
+<img src="assets/step_2.gif" width="300px">
+3. Basic Anim<br/>
+<img src="assets/step_3.gif" width="300px">
+4. Anim Switches<br/>
+<img src="assets/final.gif" width="300px">
