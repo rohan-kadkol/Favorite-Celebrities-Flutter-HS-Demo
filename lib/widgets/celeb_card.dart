@@ -17,15 +17,21 @@ class CelebCard extends StatefulWidget {
 class _CelebCardState extends State<CelebCard> {
   SMIInput<bool>? _state;
 
+  void _updateAnimState() {
+    _state?.change(widget.celebAnim.animState);
+  }
+
   void _onRiveInit(Artboard artboard) {
-    final controller = StateMachineController.fromArtboard(artboard, 'State Machine 1');
+    final controller =
+        StateMachineController.fromArtboard(artboard, 'State Machine 1');
     artboard.addController(controller!);
     _state = controller.findInput(widget.celebAnim.anim);
+    _updateAnimState();
   }
 
   @override
   Widget build(BuildContext context) {
-    _state?.change(widget.celebAnim.animState);
+    _updateAnimState();
 
     return Container(
       child: Column(
@@ -45,6 +51,10 @@ class _CelebCardState extends State<CelebCard> {
               onInit: _onRiveInit,
             ),
           ),
+          // TODO (1): Add a BottomBar with widget.celebAnim
+          BottomBar(
+            celebAnim: widget.celebAnim,
+          )
         ],
       ),
     );

@@ -12,7 +12,14 @@ class BottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      
+      // TODO (2): height = 50.0
+      // TODO (3): background color: Color.grey.shade900
+      // TODO (4): Center with AnimStateSwitch with celebAnim
+      height: 50.0,
+      color: Colors.grey.shade900,
+      child: Center(
+        child: AnimStateSwitch(celebAnim: celebAnim),
+      ),
     );
   }
 }
