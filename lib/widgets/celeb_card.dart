@@ -23,9 +23,6 @@ class _CelebCardState extends State<CelebCard> {
     // TODO (4): Get controller from StateMachineController.fromArtboard(artboard, 'State Machine 1')
     // TODO (5): Add controller to artboard
     // TODO (6): Get state from controller.findInput(widget.celebAnim.anim)
-    final controller = StateMachineController.fromArtboard(artboard, 'State Machine 1');
-    artboard.addController(controller!);
-    _state = controller.findInput(widget.celebAnim.anim);
   }
 
   @override
@@ -47,12 +44,6 @@ class _CelebCardState extends State<CelebCard> {
           // TODO (1): Add an expanded
           // TODO (2): In Expanded - RiveAnimation.asset(widget.celebAnim.animPath)
           // TODO (3): onInit = _onRiveInit
-          Expanded(
-            child: RiveAnimation.asset(
-              widget.celebAnim.animPath,
-              onInit: _onRiveInit,
-            ),
-          ),
         ],
       ),
     );
