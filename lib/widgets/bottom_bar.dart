@@ -1,6 +1,8 @@
 import 'package:favorite_celebrity/data/celeb_anim.dart';
+import 'package:favorite_celebrity/providers/celeb_provider.dart';
 import 'package:favorite_celebrity/widgets/anim_state_switch.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class BottomBar extends StatelessWidget {
   const BottomBar({Key? key, required this.celebAnim}) : super(key: key);
@@ -11,15 +13,20 @@ class BottomBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 50.0,
+      width: double.infinity,
       color: Colors.grey.shade900,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: celebAnim.animStates
-            .map(
-              (animState) => AnimStateSwitch(animState: animState),
-            )
-            .toList(),
+      child: Center(
+        child: AnimStateSwitch(celebAnim: celebAnim),
       ),
+      // child: Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   // children: celebAnim.animStates
+      //   //     .map(
+      //   //       (animState) => AnimStateSwitch(animState: animState),
+      //   //     )
+      //   //     .toList(),
+      //   children: [AnimStateSwitch(celebAnim: celebAnim)],
+      // ),
     );
   }
 }

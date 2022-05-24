@@ -2,23 +2,24 @@ import 'package:favorite_celebrity/data/celeb_anim.dart';
 import 'package:flutter/material.dart';
 
 class AnimStateSwitch extends StatelessWidget {
-  const AnimStateSwitch({Key? key, required this.animState}) : super(key: key);
+  const AnimStateSwitch({Key? key, required this.celebAnim}) : super(key: key);
 
-  final AnimState animState;
+  final CelebAnim celebAnim;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            animState.state,
+            celebAnim.anim,
             style: TextStyle(color: Colors.white),
           ),
           const SizedBox(width: 10.0),
           Switch(
-            value: animState.isActivated,
-            onChanged: (v) => null,
+            value: celebAnim.animState,
+            onChanged: (v) => celebAnim.onChange(context),
             inactiveTrackColor: Colors.grey,
           )
         ],
