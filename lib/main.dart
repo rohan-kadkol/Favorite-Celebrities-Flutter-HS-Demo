@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // TODO (1): Change title
-      title: 'Flutter Demo',
+      title: 'Favorities Celebrities',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
