@@ -17,7 +17,7 @@ class _CelebsPageViewState extends State<CelebsPageView> {
     final List<CelebAnim> celebAnims = [
       CelebAnim(
         name: "Kobe Bryant",
-        animPath: "anims/kobe_bryant_2.riv",
+        animPath: "anims/kobe_bryant_3.riv",
         anim: "Crossing",
         onChange: (c) =>
             Provider.of<CelebProvider>(context, listen: false).changeIsCross(),
@@ -25,15 +25,15 @@ class _CelebsPageViewState extends State<CelebsPageView> {
       ),
       CelebAnim(
         name: "Elon Musk",
-        animPath: "anims/elon_musk_1.riv",
+        animPath: "anims/elon_musk_3.riv",
         anim: "Buying Twitter",
         onChange: (c) =>
             Provider.of<CelebProvider>(context, listen: false).changeIsBuyingTwitter(),
         animState: context.watch<CelebProvider>().isBuyingTwitter,
       ),
       CelebAnim(
-        name: "Musician",
-        animPath: "anims/taylor_swift_2.riv",
+        name: "Taylor Swift",
+        animPath: "anims/taylor_swift_3.riv",
         anim: "Performing",
         onChange: (c) =>
             Provider.of<CelebProvider>(context, listen: false).changeIsPerforming(),

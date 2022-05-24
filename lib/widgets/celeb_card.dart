@@ -36,6 +36,7 @@ class _CelebCardState extends State<CelebCard> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          const SizedBox(height: 20.0),
           Text(
             widget.celebAnim.name,
             style: Theme.of(context)
