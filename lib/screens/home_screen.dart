@@ -10,7 +10,6 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // TODO (2): Change backgroundColor to black
       backgroundColor: Colors.black,
     );
   }
